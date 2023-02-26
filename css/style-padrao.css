@@ -1,0 +1,366 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    
+   
+}
+
+
+
+body{
+    min-height: 100vh;
+    /* unidade vh(altura do viewport), permitindo que o body 
+    defina um valor minimo de altura com base na altura total do 
+    viewport do usuario */
+}
+
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+/* estilização do header - NAV */
+/* .cabecalho{
+    width: 100%;
+    background-color: bisque;
+    
+} */
+
+/* estilização body */
+.body{
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body main {
+    flex:  1 1 0;
+    border: 0;
+    
+}
+    
+    
+html {
+    background: linear-gradient(rgba(252,74,26, .85));
+    background-color:rgba(252,74,26, .75);
+}
+
+
+.container > * {
+    height: 70px; 
+    width: 60px;
+    /* background-color: rgba(red, green, blue, 0.25); */
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12pt;
+    margin: 5px;
+    padding: 10px;
+    text-align:center;
+    transition: all 150ms ease;
+    align-items: center;
+    
+    
+}
+
+.container > * :hover {
+    background-color: rgba(red, green, blue, 0.4);
+}
+
+.container {
+    
+    display: flex;
+    border: 5px solid #fff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    /* align-content:; */        
+}
+
+#logo{
+    width: 100%;
+    height: 105%;
+    
+    
+}
+
+
+#sinfra-header{
+    min-height: 70px;
+    width: auto;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+
+/* estilizaçao main */
+.main {
+    background-color: beige;
+    
+}
+
+.main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    
+}
+
+.main section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* estilização footer */
+footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border: 5px solid white;
+  
+}
+
+footer > *{
+    height: 15px; 
+    width: 60px;
+    font-size:small;
+    font-weight: 550; 
+    /* background-color: rgba(red, green, blue, 0.25); */
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #3672e0;
+    margin: 5px;
+    padding: 15px;
+    text-align:center;
+    transition: all 150ms ease;
+    align-items: center;
+    flex-basis: 125px;
+}
+
+footer p {
+    color: whitesmoke;
+    /* text-decoration: underline; */
+    font-size: 6pt;
+    
+}
+
+footer a{
+    text-decoration: none;
+}
+
+/* media queries */
+@media screnn and (max-width: 480px) {
+    body{width: 100%;}
+    header{display: flex;}
+    
+}
+
+/* 02_MENUS / MAIN  */
+
+.main-02{
+    display: flex;
+    background-color: var(--background-clean);
+
+}
+
+
+.menus-02{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    margin-left: 10px;
+    
+    
+}
+
+.menus-02 a {
+    
+    color: whitesmoke;
+    height: 100%;
+    font-weight: 600;
+    /* margin-top: 20px; */
+
+    
+        display: block;
+        width: 60%;
+        height: 80%;
+        /* margin: 0 auto; */
+        margin-top: 3px;
+        border: rgb(0,0,0) 1px solid;
+        background-color:rgba(127, 184, 244, 0.75);
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        }
+       
+       .menus-02 a li{
+        margin-top: 10px;
+       }
+       
+       
+        .menus-02 a:hover  {
+        outline: rgb(33,180,208) 4px solid;
+        /* background-color: #F00; */
+        border-color: #CCC;
+        }
+
+        /* CADASTRO USUARIO */
+
+        .menu-direito-caduser{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 300px;
+            margin-top: 30px;
+        }
+
+ /* CONSULTA USUARIO */
+
+ .menu-direito-conuser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+/* CADASTRO INFRATORES */
+
+#cadInfra {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+
+}
+
+
+
+#cadInfra > *{
+    /* border: 2px solid red; */
+  width: 100%;
+  height: 75%;
+ display: flex;
+ flex-direction: row;
+ /* justify-content: center; */
+
+  
+   
+}
+
+#cadInfra div {
+    /* border: 2px solid black; */
+    width: 600px;
+    /* height: 75%; */
+    /* margin-top: 60px; */
+    
+}
+
+/* #cadInfra form > *{
+    margin-top: 5px;
+    
+}
+*/
+
+#cadInfra div input {
+    width: 95%;
+    height: 30px;
+}
+
+#cadInfra div label{
+    font-weight: 550;
+    color: grey;
+}
+
+#btn-cadInfra{
+    
+    width: 100px;
+    height: 30px;
+   margin-bottom: 10px;
+   margin-left: 425px;;
+    
+}
+
+#cadinfrah1{
+    
+    font-size: 25pt;
+    text-align: center;
+}
+
+#cadinfrah2{
+    
+    font-size: 25pt;
+    /* display: none; */
+    color: var(--background-clean);
+}
+
+
+
+/* CONSULTA INFRATORES */
+.menu-direito-coninfra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+#btn-conInfra{
+    
+    width: 100px;
+    height: 30px;
+   margin-bottom: 10px;
+   margin-left: 425px;
+}
+
+/* CADASTRO FACCOES */
+
+.menu-direito-cadfac{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.menu-direito-cadfac h2{
+    font-size: 25pt;
+}
+.menu-direito-cadfac input{
+    width: 100%;
+    margin: 5px;
+}
+
+.menu-direito-cadfac label{
+    color: grey;
+    font-weight: 550;
+}
+
+#btn-cadfac{
+    
+    width: 100px;
+    height: 30px;
+   margin-bottom: 10px;
+   margin-left: 200px;
+}
+
+#btn-cadvei{
+    
+    width: 100px;
+    height: 30px;
+   margin-bottom: 10px;
+   margin-left: 200px;
+}
+
+#btn-consveiculo{
+    
+    width: 100px;
+    height: 30px;
+   margin-bottom: 10px;
+   margin-left: 200px;
+}
